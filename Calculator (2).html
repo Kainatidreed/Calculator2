@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blue;
+    }
+    .container{
+        margin: auto;
+        background-color: gray;
+        height: 700px;
+        width: 330px;
+        padding: 30px 60px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 5px 5px 30px 20px rgb(184, 159, 159)
+        
+    }
+     input{
+        margin: 5px 10px;
+        
+        
+
+    }
+    #res{
+        color: rgb(81, 221, 68);
+        padding:  25px 30px;
+        border-radius: 100px;
+        font-size: 20px;
+        
+        outline: none;
+        box-shadow: 4px 3px 10px 5px rgb(15, 14, 68);
+        font-weight: bold;
+    }
+    #res:hover{
+        background-color: orange;
+        color: white;
+        
+    }
+    #inp{
+        height: 40px;
+        font-weight: bold;
+        font-size: 20px;
+        width: 260px;
+        border-radius: 20px;
+        box-shadow: 4px 3px 10px 5px rgb(15, 14, 68);
+        outline: none;
+    }
+    #clear{
+        color: green;
+        padding: 10px 15px;
+        box-shadow: 4px 3px 10px 5px rgb(206, 200, 196);
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        outline: transparent;
+    }
+    #clear:hover{
+        background-color: orange;
+        color: white;
+
+    }
+    @media(max-width:420px)
+    {
+        .container{
+            margin: auto;
+            background-color: gray;
+            height: 630px;
+            width: 260px;
+            padding: 10px;
+    
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px 5px 30px 20px rgb(184, 159, 159)
+        }
+        #res{
+            color: rgb(81, 221, 68);
+            padding:  10px 15px;
+            border-radius: 250px;
+            font-size: 18px;
+            
+            outline: none;
+            box-shadow: 4px 3px 10px 5px rgb(15, 14, 68);
+            font-weight: bold;
+        }
+        #clear{
+            color:rgb(81, 221, 68);
+            padding: 7px 12px;
+            box-shadow: 4px 3px 10px 5px rgb(206, 200, 196);
+            font-weight: bold;
+            border-radius: 10px;
+        
+            font-size: 18px;
+            outline: transparent;
+        }
+        #inp{
+            height: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            width: 200px;
+            border-radius: 20px;
+            box-shadow: 4px 3px 10px 5px rgb(15, 14, 68);
+            outline: none;
+        }
+            
+        
+    }
+   
+   
+    
+
+</style>
+<body>
+    
+    
+    <form name="form" class="container">
+    
+        
+        <input type="text" name="result" id="inp">
+        <br><br>
+        <input type="button" value="1"  id="res" onclick="form.result.value+='1'">
+        <input type="button" value="2"  id="res" onclick="form.result.value+='2'">
+        <input type="button" value="3"  id="res" onclick="form.result.value+='3'">
+        <br><br>
+
+        
+        <input type="button" value="4" id="res" onclick="form.result.value+='4'">
+        <input type="button" value="5" id="res" onclick="form.result.value+='5'">
+        <input type="button" value="6" id="res" onclick="form.result.value+='6'">
+        <br><br>
+
+        
+        <input type="button" value="7" id="res" onclick="form.result.value+='7'">
+        <input type="button" value="8" id="res" onclick="form.result.value+='8'">
+        <input type="button" value="9" id="res" onclick="form.result.value+='9'">
+        <br><br>
+
+        
+        <input type="button" value="0" id="res" onclick="form.result.value+='0'">
+        <input type="button" value="." id="res" onclick="form.result.value+='.'">
+        <input type="button" value="*" id="res" onclick="form.result.value+='*'">
+        <br><br>
+
+        
+        <input type="button" value="+"  id="res" onclick="form.result.value+='+'">
+        <input type="button" value="-" id="res" onclick="form.result.value+='-'">
+        <input type="button" value="/" id="res" onclick="form.result.value+='/'">
+        <br><br>
+        <input type="button" value="=" id="res"onclick="form.result.value=eval(form.result.value)">
+        <input type="button" value="Clear All" id="clear" onclick="form.result.value=''">
+
+    </form>
+    </div>
+
+    
+</body>
+</html>
